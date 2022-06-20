@@ -1,0 +1,173 @@
+h1, h2, h3, h4, h5, h6, ul, li, p {margin: 0;};
+
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+.object-container {
+    background-color: lightblue;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+.object-container p {
+    font-size: 56px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+.object-container p:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: blue;
+}
+.object-container p:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: blue;
+}
+.homework {
+    width: 60%;
+    height: auto;
+    margin: 60px auto;
+    border: 1px groove;
+    background-color: rgba(0, 255, 255, 0.137);
+}
+h2 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+ul {
+    list-style: none;
+    margin: 40px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul li {
+    transition: all .1s;
+}
+.first-ul li:nth-child(1) {
+    text-decoration: line-through;
+}
+.first-ul li:nth-child(2) {
+    font-weight: bold;
+}
+.first-ul li:nth-child(3) {
+    font-style: italic;
+}
+.first-ul li:nth-child(4) {
+    text-transform: uppercase;
+}
+ul li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(Images/tick-svgrepo-com.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    filter: 
+        invert(27%) 
+        sepia(51%) 
+        saturate(2878%) 
+        hue-rotate(100deg)
+        brightness(104%) 
+        contrast(97%);
+}
+ul li:hover:before {
+    filter: 
+        invert(27%) 
+        sepia(51%) 
+        saturate(2878%) 
+        hue-rotate(346deg)
+        brightness(104%) 
+        contrast(97%);
+    }
+ul li:hover {
+    font-size: 17px;
+    color: red;
+    cursor: pointer;
+}
+.second-block {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button {
+    width: 190px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+.first-button {
+    background-color: rgb(131, 192, 202);
+    box-shadow: 0 0 25px 0px rgb(131, 144, 150);
+}
+.second-button {
+    background-color: rgb(68, 84, 88);
+    box-shadow: 0 0 15px 0px rgb(68, 84, 88);
+}
+.third-button {
+    background-color: gray;
+    box-shadow: 0 0 15px 0px rgb(146, 146, 146);
+}
+.second-button:hover > a:after {
+    content: '→';
+    font-size: 16px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.third-button:active > a:after {
+    content: '→';
+    font-size: 16px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.third-block {
+    margin-top: 10px;
+    padding: 30px;
+}
+.third-block p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 17px;
+}
+.third-block p:nth-child(1)::first-line {
+    color: red;
+    font-weight: bold;
+}
+.third-block p:nth-child(2)::first-letter {
+    color: red;
+    font-weight: bold;
+}
