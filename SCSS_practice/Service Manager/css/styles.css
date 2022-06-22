@@ -28,42 +28,13 @@ header {
   width: 100%;
   display: flex;
 }
-header .logo_container {
-  width: 15%;
-  display: flex;
-}
-header .logo_container .logo_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .logo_container .logo_txt {
-  margin-top: -2.5px;
-  margin-left: 12px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #fff;
-}
-header .logo_container .logo_txt p {
-  width: 100%;
-  margin: 0;
-}
-header .logo_container .logo_txt p:nth-child(2) {
-  font-weight: bold;
-}
 header ul {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 header ul li {
-  margin-left: 48px;
+  margin-left: 68px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -77,7 +48,40 @@ header ul li:nth-child(1) {
 header ul li:nth-child(2) {
   color: black;
 }
-header .signUp_button {
+
+.logo_container {
+  width: 15%;
+  display: flex;
+}
+
+.logo_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_txt {
+  margin-top: -2.5px;
+  margin-left: 12px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+}
+.logo_txt p {
+  width: 100%;
+  margin: 0;
+}
+.logo_txt p:nth-child(2) {
+  font-weight: bold;
+}
+
+.signUp_button {
   width: 120px;
   height: 30px;
   border: 1px solid #fff;
@@ -87,7 +91,7 @@ header .signUp_button {
   justify-content: center;
   align-items: center;
 }
-header .signUp_button a {
+.signUp_button a {
   font-family: "Raleway", sans-serif;
   color: #fff;
   text-align: center;
@@ -103,6 +107,13 @@ header .signUp_button a {
   background-image: url(../images/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main_block_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .info_block {
@@ -164,4 +175,63 @@ header .signUp_button a {
 .trial_button a {
   color: #000;
   font-weight: 600;
+}
+
+.video_block {
+  width: 50%;
+  margin-top: 250px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.video {
+  width: 600px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../images/video_preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.play_button {
+  width: 60px;
+  height: 60px;
+  background-color: #061e37;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.play_button a {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.play_button a .fas {
+  color: #fff;
+}
+
+.play_button-txt_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play_button-txt_container a {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */

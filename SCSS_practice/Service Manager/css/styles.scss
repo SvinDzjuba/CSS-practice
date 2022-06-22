@@ -5,6 +5,7 @@ a{text-decoration: none; color: black; margin: 0; padding: 0}; li{list-style: no
 ul{margin: 0; padding: 0}; h1{margin: 0;}
 
 
+
 .wrapper { 
     width: 1600px;
     margin: 0 auto;
@@ -13,41 +14,12 @@ ul{margin: 0; padding: 0}; h1{margin: 0;}
 header {
     width: 100%;
     display: flex;
-    .logo_container {
-        width: 15%;
-        display: flex;
-        .logo_img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .logo_txt {
-            margin-top: -2.5px;
-            margin-left: 12px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            font-family: $main_font;
-            text-transform: uppercase;
-            font-size: 15px;
-            color: #fff;
-            p {
-                width: 100%;
-                margin: 0;
-                &:nth-child(2) {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
     ul {
         width: 100%;
         display: flex;
         justify-content: center;
         li {
-            margin-left: 48px;
+            margin-left: 68px;
             font-family: $main_font;
             font-weight: 700;
             letter-spacing: 1px;
@@ -62,20 +34,49 @@ header {
             }
         }
     }
-    .signUp_button {
-        width: 120px;
-        height: 30px;
-        border: 1px solid #fff;
-        border-radius: 2px;
-        margin-top: -5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-            font-family: $main_font;
-            color: #fff;
-            text-align: center;
+}
+.logo_container {
+    width: 15%;
+    display: flex;
+}
+.logo_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_txt {
+    margin-top: -2.5px;
+    margin-left: 12px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: $main_font;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    p {
+        width: 100%;
+        margin: 0;
+        &:nth-child(2) {
+            font-weight: bold;
         }
+    }
+}
+.signUp_button {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        font-family: $main_font;
+        color: #fff;
+        text-align: center;
     }
 }
 .main_page {
@@ -88,6 +89,12 @@ header {
     background-image: url(../images/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.main_block_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .info_block {
     width: 33%;
@@ -145,5 +152,59 @@ header {
     a {
         color: #000;
         font-weight: 600;
+    }
+}
+.video_block {
+    width: 50%;
+    margin-top: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.video {
+    width: 600px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/video_preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.play_button {
+    width: 60px;
+    height: 60px;
+    background-color: #061e37;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    a {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .fas {
+            color: #fff;
+        }
+    }
+}
+.play_button-txt_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        font-family: $main_font;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
