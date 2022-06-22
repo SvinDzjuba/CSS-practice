@@ -1,6 +1,8 @@
 a {
   text-decoration: none;
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -10,6 +12,10 @@ li {
 ul {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 .wrapper {
@@ -32,7 +38,7 @@ header .logo_container .logo_img {
   align-items: center;
 }
 header .logo_container .logo_txt {
-  margin-top: 7px;
+  margin-top: -2.5px;
   margin-left: 12px;
   height: 30px;
   display: flex;
@@ -42,11 +48,14 @@ header .logo_container .logo_txt {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
-  color: white;
+  color: #fff;
 }
 header .logo_container .logo_txt p {
   width: 100%;
   margin: 0;
+}
+header .logo_container .logo_txt p:nth-child(2) {
+  font-weight: bold;
 }
 header ul {
   width: 100%;
@@ -56,10 +65,11 @@ header ul {
 header ul li {
   margin-left: 48px;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1px;
   font-size: 16px;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 header ul li:nth-child(1) {
   margin-left: 0;
@@ -70,14 +80,16 @@ header ul li:nth-child(2) {
 header .signUp_button {
   width: 120px;
   height: 30px;
-  border: 1px solid white;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin-top: -5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .signUp_button a {
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -91,4 +103,65 @@ header .signUp_button a {
   background-image: url(../images/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.info_block {
+  width: 33%;
+  margin-top: 250px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info_block h1 {
+  font-size: 55px;
+  line-height: 65px;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+.info_block p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 35px;
+}
+.info_block a {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.info_block div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy_button {
+  width: 150px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #061e37;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 30px;
+}
+.buy_button a {
+  color: #fff;
+}
+
+.trial_button {
+  width: 160px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.trial_button a {
+  color: #000;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

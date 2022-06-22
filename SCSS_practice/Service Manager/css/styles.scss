@@ -1,8 +1,11 @@
 $main_font: 'Raleway', sans-serif;
 
-a{text-decoration: none; color: black}; li{list-style: none;}; ul{margin: 0; padding: 0}
 
-.wrapper {
+a{text-decoration: none; color: black; margin: 0; padding: 0}; li{list-style: none;}; 
+ul{margin: 0; padding: 0}; h1{margin: 0;}
+
+
+.wrapper { 
     width: 1600px;
     margin: 0 auto;
     margin-top: 60px;
@@ -19,7 +22,7 @@ header {
             align-items: center;
         }
         .logo_txt {
-            margin-top: 7px;
+            margin-top: -2.5px;
             margin-left: 12px;
             height: 30px;
             display: flex;
@@ -29,10 +32,13 @@ header {
             font-family: $main_font;
             text-transform: uppercase;
             font-size: 15px;
-            color: white;
+            color: #fff;
             p {
                 width: 100%;
                 margin: 0;
+                &:nth-child(2) {
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -43,10 +49,11 @@ header {
         li {
             margin-left: 48px;
             font-family: $main_font;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: 1px;
             font-size: 16px;
             text-align: center;
-            color: white;
+            color: #fff;
             &:nth-child(1) {
                 margin-left: 0;
             }
@@ -58,13 +65,15 @@ header {
     .signUp_button {
         width: 120px;
         height: 30px;
-        border: 1px solid white;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        margin-top: -5px;
         display: flex;
         justify-content: center;
         align-items: center;
         a {
             font-family: $main_font;
-            color: white;
+            color: #fff;
             text-align: center;
         }
     }
@@ -79,4 +88,62 @@ header {
     background-image: url(../images/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.info_block {
+    width: 33%;
+    margin-top: 250px;
+    margin-left: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    h1 {
+        font-size: 55px;
+        line-height: 65px;
+        letter-spacing: 1.5px;
+        font-family: $main_font;
+        font-weight: 800;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: $main_font;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    a {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.buy_button {
+    width: 150px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #061e37;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 30px;
+    a {
+        color: #fff;
+    }
+}
+.trial_button {
+    width: 160px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    a {
+        color: #000;
+        font-weight: 600;
+    }
 }
